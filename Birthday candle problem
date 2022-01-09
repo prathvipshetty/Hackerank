@@ -1,0 +1,46 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+
+
+def birthdayCakeCandles(candles):
+    # Write your code here
+    c=sorted(candles)
+  
+    contains_duplicates = any(candles.count(element) > 1 for element in candles)
+
+    #my_dict = {i:candles.count(i) for i in candles}
+    for n in candles:
+        if (n == c1):
+            Count=count + 1
+        return Count
+        contains_duplicates = any(a_list.count(element) > 1 for element in a_list)
+
+    return 0
+    
+   # b_dict=max(my_dict.keys())
+    #c= my_dict[b_dict]
+    
+    #c = b_dict.values()
+    #return c
+    
+    
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    candles_count = int(input().strip())
+
+    candles = list(map(int, input().rstrip().split()))
+
+    result = birthdayCakeCandles(candles)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
